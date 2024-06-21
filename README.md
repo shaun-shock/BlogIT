@@ -1,6 +1,6 @@
-Certainly! Here's a sample README file for your project:
 
----
+![alt text](https://github.com/shaun-shock/BlogIT/blob/master/public/blogIT.jpg)
+
 
 # BlogIT Project
 
@@ -49,6 +49,4 @@ To run this project locally:
 3. Start the server with `node index.js`.
 4. Open your web browser and visit `http://localhost:3000`.
 
----
 
-Feel free to adjust the content and sections based on your specific project features and needs. This README provides an overview of the application's functionalities and guides users on how to interact with it.
