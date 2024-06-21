@@ -1,0 +1,27 @@
+<%- include("./static/header.ejs")%>
+<%- include("./static/navbar.ejs") %>
+
+    <div class = "home">
+        <div class="px-4 py-5 my-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/blogIT.jpg" alt="" width="200" height="160" style="border-radius: 20%;">
+            <h1 class="display-5 fw-bold text-body-emphasis " style="color: #c7a337 !important;">BlogIT</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4 pStyle">Welcome to BlogIT, an application where you can view blogs and even create and post a few of your own blogs, Select one of the options to get started right away! </p>
+              <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" id="createButton" class="btn btn-primary btn-lg px-4 gap-3  buttonBorder "  style="--bs-btn-bg: #0d121a;    --bs-btn-color: #b6a572;
+">Create a Blog</button>
+
+                <button type="button" id="viewButton" class="btn btn-primary btn-lg px-4 customButton"  style="--bs-btn-bg: #0d121a;    --bs-btn-color: #b6a572;
+">Explore blogs</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="/redirect.js"></script>
+
+  </body>
+</html>

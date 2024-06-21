@@ -1,0 +1,61 @@
+<%- include("./static/header.ejs") %>
+<%- include("./static/navbar.ejs") %>
+
+<style>
+    body {
+        background-color: black; 
+        color: #212529; 
+    }
+
+    .container {
+        margin-top: 50px;
+        background-color: #ffffff; 
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+    .form-label {
+        color: #ab9c31; 
+    }
+
+     .form-control {
+        border-color: #ab9c31;
+        background-color: #212529;
+        color: #ab9c31;
+    }
+    
+    .form-control:focus {
+        background-color: #212529; 
+        color: #ab9c31; 
+        border-color: #ab9c31; 
+        box-shadow: 0 0 0 0.25rem rgba(171, 156, 49, 0.25); 
+    }
+
+    .btn-primary {
+        background-color: #212529; 
+        border-color: #ab9c31; 
+    }
+
+    .btn-primary:hover {
+        background-color: #968b28; 
+        border-color: #968b28; 
+    }
+</style>
+
+<div class="container" style="background-color:#212529; margin-top: 10%;">
+    <form action="/create" method="POST">
+        <div class="mb-3">
+            <label for="blogTitle" class="form-label">Blog Title</label>
+            <input type="text" class="form-control" id="blogTitle" name="blogTitle" placeholder="Enter blog title" required>
+        </div>
+        <div class="mb-3">
+            <label for="blogContent" class="form-label">Blog Content</label>
+            <textarea class="form-control" id="blogContent" name="blogContent" rows="5" placeholder="Enter blog content" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary col-12" id="submitBlog">Submit</button>
+    </form>
+</div>
+
+<script src="/redirect.js"></script>
+<%- include("./static/footer.ejs") %>

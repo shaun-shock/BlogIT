@@ -1,0 +1,26 @@
+<%- include("./static/header.ejs") %>
+<%- include("./static/navbar.ejs") %>
+
+<div class="cardView">
+  <% for (let i = 0; i < locals.title.length; i++) { %>
+    <div class="card" style="width: 18rem; --bs-card-bg: #0f0c0c;">
+      <img src="/blogImg.jpg" class="card-img-top card-img" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><%= locals.title[i] %></h5>
+        <p class="card-text"><%= locals.content[i].substring(0, 100); %> .....</p>
+        <div class="card-buttons" style="font-size: 10px;" >
+          <a href="#" class="btn btn-primary customButtonDel" onclick="fadeOutAndRedirectMy(<%= i %>);">Read Blog</a>
+          <a href="#" class="btn btn-primary customButtonDel" onclick="fadeOutAndRedirectEdit(<%= i %>);">Edit</a>
+          <button type="button" class="btn btn-primary customButtonDel" onclick="confirmDelete(<%= i %>);">Delete</button>
+          <!-- Hidden form for actual delete request -->
+          <form id="deleteForm<%= i %>" action="/delete/<%= i %>" method="POST" style="display: none;">
+            <input type="hidden" name="_method" value="DELETE">
+          </form>
+        </div>
+      </div>
+    </div>
+  <% } %>
+</div>
+
+<script src="/redirect.js"></script>
+<%- include("./static/footer.ejs") %>
