@@ -1,5 +1,5 @@
 
-<img src="https://github.com/shaun-shock/BlogIT/blob/master/public/blogIT.jpg" width="100" height="200"/>
+<img src="https://github.com/shaun-shock/BlogIT/blob/master/public/blogIT.jpg" width="200" height="200" border-radius: 20%/>
 
 # BlogIT Project
 
