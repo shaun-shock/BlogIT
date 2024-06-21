@@ -1,6 +1,5 @@
 
-![alt text](https://github.com/shaun-shock/BlogIT/blob/master/public/blogIT.jpg)
-
+<img src="https://github.com/shaun-shock/BlogIT/blob/master/public/blogIT.jpg" width="100" height="100"/>
 
 # BlogIT Project
 
