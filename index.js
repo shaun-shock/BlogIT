@@ -29,7 +29,6 @@ app.set("view engine", "ejs");
 app.get("/", async (req, res) => {
   try {
     const response = await axios.get(URL);
-    console.log(response.data);
 
     // Clear existing arrays
     titles.length = 0;
